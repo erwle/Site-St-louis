@@ -34,7 +34,7 @@
         <div class="container">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="images/logo.png" alt="Logo Lycée Saint-Louis" class="logo-img">
+                    <img src="images/logo.png" alt="Logo Lycée Saint-Louis" class="logo-img" title="Le logo est la propriété exclusive de l'établissement">
                 </div>
 
                 <button class="nav-toggle" aria-label="Toggle navigation">
@@ -138,7 +138,7 @@
                 </div>
 
                 <div class="presentation-image">
-                    <img src="images/presentation.jpg" alt="Étudiants en BTS SIO">
+                    <img src="images/presentation.jpg" alt="Étudiants en BTS SIO" title="Toute reproduction est interdite sauf autorisation">
                 </div>
             </div>
         </div>
@@ -761,7 +761,7 @@
                 <div class="footer-section">
                     <h4>Informations</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mentions/index.html">Mentions légales</a></li>
                         <li><a href="#">Politique de confidentialité</a></li>
                         <li><a href="#">Plan du site</a></li>
                         <li><a href="#">Accessibilité</a></li>
@@ -789,7 +789,48 @@
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
-
+<!-- COOKIE POPUP -->
+<div id="cookie-overlay">
+    <div id="cookie-popup">
+      <h1>Politique des cookies</h1>
+      <p>Ce site utilise des cookies pour analyser le trafic et personnaliser les contenus. Vous pouvez choisir d’accepter ou de refuser certains cookies.</p>
+      
+      <ul>
+        <li><strong>Cookies techniques</strong> : Nécessaires au fonctionnement du site. Toujours actifs.</li>
+        <li><strong>Cookies analytiques</strong> : Mesurent l’audience.</li>
+        <li><strong>Cookies publicitaires</strong> : Personnalisent les annonces.</li>
+      </ul>
+  
+      <p>Pour gérer vos préférences, cliquez sur “Préférences des cookies”.</p>
+  
+      <div class="cookie-buttons">
+        <button class="accept" onclick="acceptCookies()">Accepter</button>
+        <button class="refuse" onclick="refuseCookies()">Refuser</button>
+        <button class="settings" onclick="openSettings()">Préférences</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      if (!localStorage.getItem("cookieConsent")) {
+        document.getElementById("cookie-overlay").style.display = "flex";
+      }
+    };
+    
+    function acceptCookies() {
+      localStorage.setItem("cookieConsent", "accepted");
+      document.getElementById("cookie-overlay").style.display = "none";
+    }
+    
+    function refuseCookies() {
+      localStorage.setItem("cookieConsent", "refused");
+      document.getElementById("cookie-overlay").style.display = "none";
+    }
+    
+    function openSettings() {
+      alert("Ajouter ici votre gestion des préférences.");
+    }
+    </script>
 </body>
 
 </html>
