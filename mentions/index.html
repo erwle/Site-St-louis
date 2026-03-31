@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+        :root {
+            --primary-color: #003366;
+            --primary-dark: #1e40af;
+            --secondary-color: #e5540e;
+            --dark: #1e293b;
+            --dark-light: #334155;
+            --gray: #64748b;
+            --gray-light: #cbd5e1;
+            --white: #ffffff;
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 4rem;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition-fast: 0.2s ease;
+            --container-width: 1200px;
+            --container-padding: 2rem;
+        }
+        body {
+            font-family: var(--font-secondary);
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+        }
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--container-padding);
+        }
+        h1, h2 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            color: var(--dark);
+        }
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+        section {
+            margin-bottom: var(--spacing-xl);
+            background-color: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        p {
+            margin-bottom: 1rem;
+            color: var(--dark-light);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        .last-update {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--gray);
+            margin-top: var(--spacing-xl);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing-md);
+            }
+        }
+    </style>
+        <link rel="stylesheet" href="../css/style.css">
+        <nav id="main-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <img src="../images/logo.png" alt="Logo Lycée Saint-Louis" class="logo-img" title="Le logo est la propriété exclusive de l'établissement">
+                    </div>
+    
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+    
+                    <ul class="nav-links">
+                        <li><a href="../" class="nav-link">Accueil</a></li>
+                        <li><a href="../" class="nav-link">Présentation</a></li>
+                        <li><a href="../" class="nav-link">Spécialités</a></li>
+                        <li><a href="../" class="nav-link">Programme</a></li>
+                        <li><a href="../" class="nav-link">Débouchés</a></li>
+                        <li><a href="../" class="nav-link">Poursuites</a></li>
+                        <li><a href="../" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <h1>Mentions légales</h1>
+
+        <section>
+            <h2>1. Identité de l’établissement</h2>
+            <p>
+                Le site est édité par :
+            </p>
+            <p>
+                <strong>Collège et lycée Saint-Louis</strong><br>
+                63 Grand’Rue<br>
+                29150 Châteaulin<br>
+                Téléphone : <a href="tel:02 98 86 59 01">02 98 86 59 01</a><br>
+                Email : <a href="mailto:accueil@saint-louis29.net">accueil@saint-louis29.net</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Directeur de la publication</h2>
+            <p>
+                Le directeur de la publication est <strong>Fabrice Boisumeau</strong>, en sa qualité de Directeur d'établissement.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Hébergeur du site</h2>
+            <p>
+                Le site est hébergé par :
+            </p>
+            <p>
+                <strong>GitHub, Inc.</strong><br>
+                88 Colin P. Kelly Jr. Street<br>
+                San Francisco, CA 94107<br>
+                États-Unis<br>
+                Site web : <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a><br>
+                Contact : <a href="https://support.github.com" target="_blank" rel="noopener noreferrer">support.github.com</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Conditions d’utilisation</h2>
+            <p>
+                Ce site est édité à des fins <strong>pédagogiques et non commerciales</strong>. Il est destiné aux étudiants, enseignants, partenaires et toute personne intéressée par les formations proposées par Collège et lycée Saint-Louis.
+            </p>
+            <p>
+                L’utilisation du site implique l’acceptation des présentes mentions légales. L’établissement se réserve le droit de modifier, suspendre ou interrompre l’accès au site à tout moment, sans préavis.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Protection des données personnelles</h2>
+            <p>
+                Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong>, nous nous engageons à protéger les données personnelles des utilisateurs. Peu de données sont collectées sur ce site, principalement via les formulaires de contact.
+            </p>
+            <p>
+                <strong>Finalité du traitement :</strong> Répondre aux demandes d’information ou de contact.<br>
+                <strong>Base légale :</strong> Consentement de l’utilisateur (art. 6.1.a RGPD).<br>
+                <strong>Durée de conservation :</strong> Les données sont conservées pendant la durée nécessaire à la gestion de votre demande, puis archivées conformément aux obligations légales.<br>
+                <strong>Droits des personnes :</strong> Vous disposez du droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité de vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:accueil@saint-louis29.net"></a>.<br>
+                <strong>Destinataires :</strong> Seuls les services de l’établissement concernés par votre demande ont accès à vos données.<br>
+                <strong>Sécurité :</strong> Nous mettons en œuvre des mesures techniques et organisationnelles pour garantir la sécurité de vos données.
+            </p>
+            <p>
+                Pour plus d’informations, consultez notre <a href="/politique-confidentialite">politique de confidentialité</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Propriété intellectuelle</h2>
+            <p>
+                L’ensemble des contenus du site (textes, images, logos, vidéos, etc.) est protégé par le droit d’auteur et la propriété intellectuelle. Toute reproduction ou utilisation non autorisée est interdite.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Limitation de responsabilité</h2>
+            <p>
+                Les informations diffusées sur ce site sont fournies à titre indicatif. Collège et lycée Saint-Louis ne saurait être tenu responsable des erreurs, omissions ou conséquences liées à l’utilisation des informations publiées.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. PROPRIÉTÉ INTELLECTUELLE</h2>
+            <p>
+                Le site et chacun des éléments qui le composent (textes, images, logo, etc.) sont protégés par le droit de la propriété intellectuelle.
+
+                Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite.
+                
+                Les images utilisées sont soit libres de droits, soit utilisées avec l’autorisation de leurs auteurs.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Liens hypertextes</h2>
+            <p>
+                Le site peut contenir des liens vers des sites tiers. Collège et lycée Saint-Louis  décline toute responsabilité quant au contenu ou à la disponibilité de ces sites.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Droit applicable</h2>
+            <p>
+                Les présentes mentions légales sont régies par le droit français. Tout litige sera soumis à la compétence des tribunaux français.
+            </p>
+        </section>
+
+        <section>
+            <h2>11. Contact</h2>
+            <p>
+                Pour toute question, vous pouvez nous contacter à : <a href="mailto:accueil@saint-louis29.net">accueil@saint-louis29.net</a>.
+            </p>
+        </section>
+
+        <p class="last-update">
+            Dernière mise à jour : 24*03/2026
+        </p>
+    </div>
+</body>
+</html>
